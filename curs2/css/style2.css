@@ -1,0 +1,17 @@
+* {
+    margin: 10px;
+    padding: 5px;
+
+}
+
+body {
+ text-align: center;
+}
+
+img {
+  width: min(800px, 100%);
+  
+}
+
+
+

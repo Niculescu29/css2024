@@ -1,0 +1,11 @@
+div {
+    width: 40%;
+    float: left;
+    margin: 20px;
+    border: 2px solid slategray;
+}
+
+
+.demo {
+    background-color: chocolate;
+}

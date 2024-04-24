@@ -1,0 +1,25 @@
+.cube {
+    position: relative;
+}
+
+.side {
+    height: 95px;
+    position:absolute;
+    text-align: center;
+    width: 95px;
+}
+
+.top {
+    background: hsla(120, 33%, 59%, 0.644);
+    transform: rotate(-45deg) skew(15deg, 15deg);
+}
+
+.left {
+    background: hsla(51, 64%, 59%, 0.603);
+    transform: rotate(15deg) skew(15deg , 15deg) translate(-50%,100%);
+}
+
+.right {
+    background: hsla(240, 96%, 80%, 0.664);
+    transform: rotate(-15deg) skew(-15deg, -15deg) translate(50%,100%);
+}

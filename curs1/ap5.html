@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style5.css">
+</head>
+<body>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt doloremque deleniti id quibusdam delectus quis, explicabo sequi, doloribus molestias quos magni aliquam quas veritatis! Odio veritatis maxime eligendi repudiandae itaque.</p>
+   <p>Suscipit vero et pariatur culpa quibusdam corrupti sunt nihil quisquam laborum saepe iure obcaecati ipsam inventore debitis, odio excepturi eaque perferendis. Earum, eveniet non facilis distinctio aliquam consequuntur voluptatum dolorum!</p>
+     
+    <button id="btn">Schimba css</button>
+
+
+  <div class="div-left">
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam cumque sapiente pariatur hic repellat, aspernatur perferendis, suscipit, quaerat quis illum ipsa aliquam debitis fugit dicta illo. Rerum perferendis consequuntur ex?</p>
+    <p>Nemo, beatae omnis! Corrupti voluptatum vitae, corporis ex nemo molestiae vero. Veritatis sapiente recusandae nostrum vero distinctio beatae quidem ab eligendi labore enim quod magnam nam omnis, corrupti hic! Cupiditate!</p>
+    <p>Labore molestias laboriosam laborum tenetur ipsam fugit aut perspiciatis. Repellat asperiores quod sunt quibusdam consequuntur nemo consectetur quo sequi explicabo eligendi distinctio laboriosam sed, quia aspernatur accusantium dignissimos repudiandae libero.</p>
+    
+    <button type="button" id="btn1">change div right css</button>
+
+  </div>
+
+  <div class="div-right">
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui placeat soluta iste maxime neque distinctio odio minima nesciunt, saepe pariatur beatae, modi, cumque inventore voluptate doloribus dolorem quidem repudiandae veniam.</p>
+    <p>Sequi saepe cupiditate libero hic, quo a dicta quidem veritatis ea itaque accusamus debitis, vel et tenetur quos voluptatibus delectus? Fugiat quo praesentium qui odio a dicta odit dignissimos saepe!</p>
+    <p>Iste magnam, totam nostrum, cumque quis asperiores vero quod earum error hic omnis dolorum consequuntur, quam fuga qui voluptatum ratione aut numquam ad accusantium eos at corrupti officia officiis? Asperiores!</p>
+    
+    <button type="button" id="btn2">change div right css</button>
+
+</div>
+
+
+
+<div>
+    <button id="btn4">schimba css</button>
+    <button id="btn5">scoate css</button>
+    <button id="btn6">le face pe ambele</button>
+</div>
+  
+
+
+
+
+
+
+
+   <script> 
+   //metoda 1 cu  style //
+   
+   const btn = document.getElementById("btn");
+
+   btn.addEventListener('click', function () {
+       let myParagraphs = document.querySelectorAll("body > p");
+
+        //  let myParagraphs2 = document.getElementsByTagName(p);
+         
+    //     for(const element of myParagraphs){
+
+    //     element.style.color ='red';
+    //     element.style.fontSize ='1.4em';
+    // };
+
+    myParagraphs.forEach(function(value) {
+        value.style.color ='red';
+        value.style.fontSize ='1.4em';
+
+    })
+   });
+   
+   //metoda 2  cu csstext 
+   
+   const btn1 = document.getElementById("btn1");
+
+btn1.addEventListener('click', function () {
+    let myDiv1 = document.getElementsByClassName("div-left");
+    // alert(typeof myDiv1);
+    myDiv1[0].style.cssText ='color:red;'
+
+});
+    //metoda  3   
+
+    const btn2 = document.getElementById("btn2");
+
+btn2.addEventListener('click', function () {
+    let myDiv2 = document.getElementsByClassName("div-right");
+    // alert(typeof myDiv1);
+    myDiv2[0].setAttribute('style', 'color:green');
+
+});
+
+ 
+//  metoda 4 
+
+
+const btn4 = document.getElementById("btn4");
+
+btn4.addEventListener('click', function () {
+    let myDiv2 = document.getElementsByClassName("div-right");
+    myDiv2[0].classList.add('demo');
+   
+});
+
+
+const btn5 = document.getElementById("btn5");
+
+btn5.addEventListener('click', function () {
+    let myDiv2 = document.getElementsByClassName("div-right");
+    myDiv2[0].classList.remove('demo');
+
+});
+
+const btn6 = document.getElementById("btn6");
+
+btn6.addEventListener('click', function () {
+    let myDiv2 = document.getElementsByClassName("div-right");       // toggle  = add and remove on the same button ! // 
+    myDiv2[0].classList.toggle('demo');
+});
+
+
+
+   </script>
+
+
+    
+</body>
+</html>

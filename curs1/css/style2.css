@@ -1,0 +1,40 @@
+* {
+    padding: 15px;
+}
+ 
+body {
+    width: 100%;
+    margin: auto;
+}
+
+div {
+    border: solid crimson 12px;
+    border-radius: 10px;
+}
+
+div p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: bold;
+    text-align: left;
+    text-indent: 10px;
+}
+ body > div > div >div {
+    background-color: rgba(0, 255, 255, 0.733);
+ }
+
+ body > div > div {
+    background-color: chocolate;
+ }
+
+ body > div {
+     background-color: rgba(212, 46, 212, 0.719);
+ }
+
+ div div div p {
+    color: rgba(113, 32, 129, 0.897);
+ }
+
+ div div   p {
+    color: hsla(111, 20%, 25%, 0.925);
+ }
