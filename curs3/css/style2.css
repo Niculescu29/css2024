@@ -5,12 +5,12 @@ html {
   }
   
   .font_px {
-    font-size: 10px;
-    color: red;
+    font-size: 22px;
+    color: hsla(0, 55%, 60%, 0.952);
   }
   .font_rem {
     font-size: 1.5rem; /* 1.5 x 20px = 30px;*/
-    color: green;
+    color: hsla(120, 45%, 45%, 0.911);
   }
   
   section {
@@ -18,5 +18,5 @@ html {
   }
   .font_em {
     font-size: 1em; /* 1 x 36px = 36px */
-    color: blue;
+    color: hsla(240, 56%, 56%, 0.959);
   }
